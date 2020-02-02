@@ -14,7 +14,12 @@ namespace ImagesHandlerTester
         {
             try
             {
-                
+
+
+                // var get root directory
+                // get scan settings : priority folders| delete| move| back up image| supported Extensions| action type { scan and save info| scan duplications}
+                // 
+
                 var path = @"C:\Users\smachew.WISMAIN\Desktop\tmp\testimages";
                 string supportedExtensions = "*.jpg,*.gif,*.png,*.bmp,*.jpeg";
 
