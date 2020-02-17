@@ -1,6 +1,6 @@
-﻿בס"ד"
+﻿																																				בס"ד
 
-
+***************************************** SPECIFICATIONS *****************************************
 
 1.	Scan job :
 	1.1	generate identity
@@ -9,8 +9,9 @@
 	1.4	log state
 
 2.	Metadata job
-2.1	search and log metadata
-2.2	rename if required
+	2.1	search and log metadata
+	2.2	rename if required
+
 
 3.	UI Console
 	3.1	delete duplications
