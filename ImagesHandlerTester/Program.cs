@@ -12,6 +12,17 @@ namespace ImagesHandlerTester
     {
         static void Main(string[] args)
         {
+            T1();
+
+            // requirements
+
+            // scan job :
+            // detect file
+            Console.ReadLine();
+        }
+
+        private static void T1()
+        {
             try
             {
 
@@ -49,8 +60,6 @@ namespace ImagesHandlerTester
             {
                 Console.WriteLine(ex.Message);
             }
-            
-            Console.ReadLine();
         }
     }
 }
