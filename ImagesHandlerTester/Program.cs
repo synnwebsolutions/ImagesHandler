@@ -1,4 +1,5 @@
 ﻿using ImagesHandler;
+using Smach_Core.DataAccess.FileDataBase;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,13 +13,24 @@ namespace ImagesHandlerTester
     {
         static void Main(string[] args)
         {
-            T1();
+            var path = @"C:\Users\smachew.WISMAIN\Desktop\tmp\fdTst";
+            FileDatabase db = new FileDatabase { Path = path };
+            db.KeyDelimeter = "||";
+            var t = new testClass
+            {
+                lastname = "adela",
+                mail = "asfas@",
+                name = "smachew",
+                phone = "054-5642094",
+                website = "google.com"
+            };
 
+            db.InsertEntrie(t);
             // requirements
-
+            
             // scan job :
             // detect file
-            Console.ReadLine();
+            //Console.ReadLine();
         }
 
         private static void T1()
@@ -60,6 +72,29 @@ namespace ImagesHandlerTester
             {
                 Console.WriteLine(ex.Message);
             }
+        }
+    }
+
+    public class testClass : IFileDataLoadAble
+    {
+        public  string name { get; set; }
+        public int id { get; set; }
+
+        public string lastname { get; set; }
+        public string phone { get; set; }
+        public string mail { get; set; }
+        public string website { get; set; }
+
+        public List<string> GetInsertFields()
+        {
+            return new List<string>
+            {
+                name,
+                lastname,
+                phone,
+                mail,
+                website
+            };
         }
     }
 }

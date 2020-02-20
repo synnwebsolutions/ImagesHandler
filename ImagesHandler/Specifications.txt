@@ -3,7 +3,7 @@
 ***************************************** SPECIFICATIONS *****************************************
 
 1.	Scan job :
-	1.1	generate identity
+	1.1	generate identity 
 	1.2	log job id
 	1.3	log duplications
 	1.4	log state
